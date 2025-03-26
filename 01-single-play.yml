@@ -1,0 +1,12 @@
+---
+- name: Create a file with content
+  hosts: all
+  tasks:
+    - name: Create a simple text file
+      copy:
+        dest: ~/opt/devops_dir/info.txt
+        content: |
+          Hello from Ansible!
+          This file was created using the Ansible copy module.
+          Current date: {{ ansible_date_time.date }}
+...
