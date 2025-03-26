@@ -4,12 +4,12 @@
 
   tasks:
   - name: Create Directory
-    files:
+    file:
       path: ~/opt/devops_dir
       state: directory
 
   - name: Create Directory
-    files:
+    file:
       path: ~/opt/devops_dir_1
       state: directory   
 
@@ -18,12 +18,12 @@
 
   tasks:
   - name: Create Directory
-    files:
+    file:
       path: ~/opt/devops_dir_1
       state: directory
 
   - name: Create Directory
-    files:
+    file:
       path: ~/opt/devops_dir_2
       state: directory
 
@@ -32,12 +32,12 @@
 
   tasks:
   - name: Create Directory
-    files:
+    file:
       path: ~/opt/devops_dir_group1
       state: directory
 
   - name: Create Directory
-    files:
+    file:
       path: ~/opt/devops_dir_group1
       state: directory         
 ...
