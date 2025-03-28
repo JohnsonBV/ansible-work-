@@ -4,6 +4,6 @@
   become: yes
 
   roles:
-  - Apache2
-  - html     
+    - Apache2
+    - html     
 ...
