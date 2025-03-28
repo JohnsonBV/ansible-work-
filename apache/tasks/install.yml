@@ -1,0 +1,37 @@
+---
+  - name: Install HTTPD
+    yum:
+      name: httpd
+      state: present
+    when: ansible_distribution == "Redhat"
+
+  - name: Start HTTPD
+    service:
+      name: httpd
+      state: started
+    when: ansible_distribution == "Redhat"
+
+  - name: Enable HTTPD
+    service:
+      name: httpd
+      enabled: yes
+    when: ansible_distribution == "Redhat"
+
+  - name: Install Apache2
+    apt:
+      name: Apache2
+      state: present
+    when: ansible_distribution == "Ubuntu"
+
+  - name: Start Apache2
+    service:
+      name: Apache2
+      state: started
+    when: ansible_distribution == "Ubuntu"
+
+  - name: Enable Apache2
+    service:
+      name: Apache2
+      enabled: yes
+    when: ansible_distribution == "Ubuntu"              
+...
