@@ -1,7 +1,9 @@
 ---
-- name: Dynamic Page
+- name: Variables Demo
   hosts: g3
   become: yes
+  vars:
+    myusername: JohnsonBV
 
   tasks:
   - name: update dynamic page
